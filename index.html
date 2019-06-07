@@ -1,11 +1,11 @@
 <!-- StarCatcher Game for David's Soft Dev class 2015-->
 <!DOCTYPE html>
 <html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <head>
     <title>StarCatcher - Software Development</title>
 <!--    our link to the javascript file that will control the game actions -->
-    <script type="text/javascript" src="scScripts.js"></script>
+    <script type="text/javascript" src="scScripts2.js"></script>
 <!--    out styles will be internal until we need to move them to an external file -->
     <style type="text/css">
         html, body {margin: 5px;}
@@ -13,8 +13,8 @@
         #game {
             margin-left: auto;
             margin-right: auto;
-            width: 800px;
-            height: 500px;
+            width: 900px;
+            height: 700px;
             background-color: lightblue;
             border-radius: 10px;
         }
@@ -36,8 +36,10 @@
 <body>
     <h2 class="centerText">Game ON!</h2>
     <div id="game">
-    <p id="rightSide">Starship Alpha: <span id="p1ScoreDisp">0</span></p>
-    <p id="leftSide">Starship Bravo: <span id="p2ScoreDisp">0</span></p>
+    <p id="rightSide">Starship Alpha: <span id="p1ScoreDisp">0</span><br>
+        Lives: <span id="p1LivesDisp">3</span></p>
+    <p id="leftSide">Starship Bravo: <span id="p2ScoreDisp">0</span><br>
+        Lives: <span id="p2LivesDisp">3</span></p>
         <canvas id="myCanvas"></canvas>
     </div>
 </body>
